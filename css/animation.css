@@ -1,0 +1,31 @@
+.fadeIn{
+    animation-duration: 4s;
+    animation-fill-mode:both;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fadeInDown{
+    animation-duration: 1s;
+    animation-fill-mode:both;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    from{
+        opacity: 0;
+        transform: translate(0,-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0%);
+    }
+}

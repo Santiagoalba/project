@@ -1,0 +1,371 @@
+.body{
+    margin:0px;
+    padding: 0px;
+}
+
+.navbar{
+    background-color: rgb(20, 171, 209);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px,10px;  
+
+    
+    
+    .navbar_items{
+        display: flex;
+        align-items: center;
+        &:hover{
+            color: chartreuse;
+        }
+        li{
+            font-family: 'MuseoModerno', cursive;
+            margin-left: 15px;
+        }
+        a{
+            font-family: 'MuseoModerno', cursive;
+            text-decoration: none;
+            color: black;
+            margin-right:10px;
+            &:hover{
+                color: chartreuse;
+            }
+        }
+
+        .navbar_items_user{
+            margin-right: 10px;
+            display: block;
+            align-items: center;
+            overflow: hidden;
+          
+            span{
+                display: flex;
+            }
+
+            img{
+                display: flex;
+                height: 16px;
+            }
+        }
+        
+        .navbar_items_user_dropdown{
+            list-style: none;
+            height: 0;
+            right: 0px;
+            position: absolute;
+            top: 15px;
+            overflow: hidden;
+            padding-top: 15px;
+            margin: 0px; 
+
+            li{
+                border: solid 1px black;
+            }
+        }
+        
+    }
+  
+    .burger div{
+        position: relative;
+        height: 3px;
+        background-color: black;
+        margin: 7px;
+        width: 30px;
+        left: 10px;
+        display: none;  
+    } 
+
+    .navbar_items_user:hover .navbar_items_user_dropdown{
+        overflow: visible;
+    }
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .main_ref{
+        justify-content: center;
+        font-family: 'Pacifico', cursive;
+        text-align: center;
+        color: mediumaquamarine;
+        width: 50%;
+
+        h1{
+            margin-bottom: 0px;
+        }
+    }
+    .main_products_content{
+        background-image: url(../image/blue.png);
+        /* height: 100%; */
+        background-size: cover;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 25px;
+        justify-content: center;
+        
+    } 
+    .main_products_box{
+    
+        margin: 30px;
+        text-align: center;
+        border:solid black 1px;
+        border-radius: 5px;
+        width: 30%; 
+        background-color: seashell;
+        box-shadow: 3px 3px 5px grey;
+        &:hover{
+            box-shadow: 3px 3px 5px blanchedalmond;
+        }
+        button{
+            padding: 10px;
+            margin: 10px 0px;
+            border: solid rgb(63, 216, 71) 5px;
+            background-color: blue;
+            font-family: 'MuseoModerno', cursive;
+            color: red;
+        } 
+    }
+    .main_products_img{
+        text-align: center;
+    }
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px; */
+    background-color: teal  ;
+    /* position: relative; */
+    width: 100%;
+    margin-top: 20px;
+    top: 10px;
+
+    .footer_logo{
+        display: flex;
+        align-items: center;
+    
+    }
+
+    .footer_social{
+        display: flex;
+        align-items: center;
+        margin: 0px 15px;
+        font-family: 'Pacifico', cursive;
+        color: orange;
+        ul{
+            display:flex;
+            margin: 15px 0px;
+            list-style: none;
+            padding: 0px;
+        
+        }
+        li{
+            margin: 0px 15px;
+        }
+    }
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+
+    .form_box{
+        display: flex;
+        width: 40%;
+        justify-content: center;
+        margin: 30px 0px;
+        border: solid black 1px;
+        border-radius: 10px;
+
+        .form_box_input{
+            display: flex;
+            flex-direction: column;
+            border-bottom:solid 1px grey;
+
+            input{
+                border: none;
+                margin-top: 10px;
+                padding: 20px 0px;
+                
+            }
+            .form_box_input_input::placeholder{
+                padding-left: 15px;
+                color: black;
+                font-family: 'Pacifico', cursive;
+            }
+        }
+    }
+    #prov{
+        margin: 20px 0px;
+    }
+
+    .form_button{
+        display: flex;
+        justify-content: center;
+        margin:10px;
+    
+        input{
+            width: 50%;
+            padding: 15px 0px;
+        }
+    }
+
+    .error{
+        color: red;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media only screen and (min-width:768px){
+    .linkmob{
+        display:none;
+    }
+}
+
+@media only screen and (max-width:768px){
+    
+    .burger div{
+        display: block;
+        transition: 0.6s ease;
+    }
+    .navbar{
+        min-height: 4.5vh;
+        overflow: none;
+
+        .navbar_items{
+            position: absolute;
+            right: 0px;
+            height: 95.6vh;
+            top:37px;
+            background-color: rgb(22, 6, 124);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width:60%;
+            padding: 0px;
+            justify-content: space-evenly;
+            margin-block-end: 0px;
+            margin-block-start: 0px;
+            animation-duration: 3s;
+            transform: translateX(-200%);
+            transition: transform 0.5s ease-in; 
+            
+            a{
+                height: 33%;
+                width: 100%;
+                margin: 0px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+    
+            .navbar_items_user{
+                display:none;
+            }
+    
+            .navbar_items_cont{
+                font-family: 'MuseoModerno', cursive;
+                font-size:36px;
+                color: burlywood;
+            }
+        }
+    }
+    
+    
+    
+    .nav_active{
+        transform: translate(-67%);
+        
+    }
+
+    .nav_active_body{
+        overflow:fixed;
+    }
+
+
+    .toggleBurger{
+        .line1{
+            transform: rotate(-45deg) translate(-4px,3px);
+        } 
+        .line2{
+            display: none;
+        }
+        .line3{
+            transform: translate(0px,-5px) rotate(45deg); 
+        }
+    }
+     
+    
+
+    .main_ref{
+        display: none;
+    }
+
+    .main_products_content{
+        display: block;
+        background-image: url(../image/blue.png);
+        /* height: 100%; */
+        background-size: cover;
+        justify-content: space-between;
+        flex-direction:column ;
+        align-items: center;
+    }
+
+    .main_products_box{
+        
+        margin: 30px;
+        text-align: center;
+        border: solid black 1px;
+        border-radius: 5px;
+        width: 80%;
+        background-color: seashell;
+        box-shadow: 3px 3px 5px grey;
+
+    }
+    .main_products_box button{
+        padding: 0px;
+        margin: 5px 0px;
+    }
+
+    .main_products_img{
+       align-items: center;
+       
+    }
+
+    .main_products_img img{
+        
+        width: 50%;
+        height: 50%;
+     }
+
+    .footer{
+        
+        justify-content: space-between;
+    }
+
+    .footer_logo img{
+        width: 70%;
+        height: 90%;
+        margin-right: 10px;
+    }
+    .footer_social p{
+        display: none;
+    }
+   
+   
+    .footer_social li img{
+        width: 100%
+    }
+
+    
+    
+}

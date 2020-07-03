@@ -1,0 +1,111 @@
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Brand</title>
+                <link rel="stylesheet" href="css/styles.css">
+                <link rel="stylesheet" href="css/animation.css">
+                <link rel="stylesheet" href="css/media.css">
+                <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;900&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+                <script src="js/script.js"></script>
+            </head>
+            <body>
+                <nav class="navbar fadeInDown">
+        
+                    <div class="navbar_logo">
+                         <a href="home.html"><img src="image/logo.png" alt="brand"></a>
+                    </div>
+                    <div class="navbar_items">
+                            <div class="navbar_items_cont">
+                                <a href="/faqs">Faqs</a>
+                            </div>
+                            <div class="navbar_items_cont">
+                                <a href="/products">Productos</a>
+                            </div>
+                            <div class="navbar_items_cont navbar_items_user">
+                                <span>Usuario <img src="image/arrow.png" alt=""></span>
+                                
+                                    <ul class="navbar_items_user_dropdown">
+                                        <li><a href="">Mi perfil</a></li>
+                                        <li><a href="/form">Crear cuenta</a></li>
+                                        <li><a href="">Carrito</a></li>
+                                    </ul>
+                            
+                            </div>
+                    </div>
+            
+                </nav>
+
+
+                <!-- FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM -->
+
+                <div class="form">
+                    <div class="form_box">
+                        <form action="#" onsubmit="home.validar()">
+                            <div class="form_box_input">
+                                <input class="form_box_input_input" type="text" placeholder="Nombre" id="name">
+                            </div>
+                            <div id="errorName">
+                                <p></p>
+                            </div> 
+                            <div class="form_box_input">
+                                <input class="boxInput" type="number" placeholder="Telefono" id="tel">
+                            </div>
+                            <div id="errorTel">
+                                <p></p>
+                            </div> 
+                            <div class="form_box_input">
+                                <input class="boxInput" type="email" placeholder="Mail" id="email">
+                            </div> 
+                            <div id="errorEmail">
+                                <p></p>
+                            </div> 
+                            <div class="form_box_input">
+                                <input type="text" class="boxInput" placeholder="Provincia" id="province" disabled>
+                                <select name="provinces" id="prov" onchange="provSelection()">
+                                    <option value="none">Seleccione una provincia</option>
+                                </select>
+                                <select name="municipios" id="municipio">
+                                    <option value="none">Seleccione un municipio</option>
+                                </select>
+                            </div>
+
+                            <div class="form_button">
+                                <input type="submit">                               
+                            </div>
+                            
+                        </form>
+                    </div>
+                        
+                </div>
+                
+            
+
+                <footer class="footer">
+                    <span class="footer_logo"><img src="image/catlogo.png" alt="logo"></span>
+                    <div class="footer_social">
+            
+                        <p>Estamos para ti n_n</p>
+                        
+                        
+                            <ul>
+                                <li>
+                                    <a href="https://www.instagram.com/"><img src="image/insta.png" alt="instagram"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/"><img src="image/facebook.png" alt="facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/"><img src="image/twitter.png" alt="twitter"></a>
+                                </li>
+                            </ul>
+                         
+            
+                    </div>
+                </footer>
+                
+            </body>
+            </html>
